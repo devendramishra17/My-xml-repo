@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<template encoding-version="1.3">
+    <description>Discovery</description>
+    <groupId>e78d3a73-815b-169c-ffff-ffffdabfcf24</groupId>
+    <id>3c9f96ed-c089-3211-9f78-d5fbd3aef87d</id>
+    <name>Discovery</name>
+    <snippet>
+        <connections>
+            <id>178af760-f7ed-318a-0000-000000000000</id>
+            <parentGroupId>8b6f0e43-3a9d-3bf6-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <destination>
+                <groupId>8b6f0e43-3a9d-3bf6-0000-000000000000</groupId>
+                <id>d264f21a-964b-313c-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>8b6f0e43-3a9d-3bf6-0000-000000000000</groupId>
+                <id>a3d6e89c-ea26-3666-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>86d01533-f8fa-3087-0000-000000000000</id>
+            <parentGroupId>8b6f0e43-3a9d-3bf6-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <bends>
+                <x>291.0</x>
+                <y>104.0</y>
+            </bends>
+            <bends>
+                <x>291.0</x>
+                <y>154.0</y>
+            </bends>
+            <destination>
+                <groupId>8b6f0e43-3a9d-3bf6-0000-000000000000</groupId>
+                <id>d264f21a-964b-313c-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>0</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>failure</selectedRelationships>
+            <source>
+                <groupId>8b6f0e43-3a9d-3bf6-0000-000000000000</groupId>
+                <id>d264f21a-964b-313c-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <connections>
+            <id>c196262f-ebb1-3e92-0000-000000000000</id>
+            <parentGroupId>8b6f0e43-3a9d-3bf6-0000-000000000000</parentGroupId>
+            <backPressureDataSizeThreshold>1 GB</backPressureDataSizeThreshold>
+            <backPressureObjectThreshold>10000</backPressureObjectThreshold>
+            <bends>
+                <x>291.0</x>
+                <y>104.0</y>
+            </bends>
+            <bends>
+                <x>291.0</x>
+                <y>154.0</y>
+            </bends>
+            <destination>
+                <groupId>8b6f0e43-3a9d-3bf6-0000-000000000000</groupId>
+                <id>d264f21a-964b-313c-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </destination>
+            <flowFileExpiration>0 sec</flowFileExpiration>
+            <labelIndex>1</labelIndex>
+            <loadBalanceCompression>DO_NOT_COMPRESS</loadBalanceCompression>
+            <loadBalancePartitionAttribute></loadBalancePartitionAttribute>
+            <loadBalanceStatus>LOAD_BALANCE_NOT_CONFIGURED</loadBalanceStatus>
+            <loadBalanceStrategy>DO_NOT_LOAD_BALANCE</loadBalanceStrategy>
+            <name></name>
+            <selectedRelationships>success</selectedRelationships>
+            <source>
+                <groupId>8b6f0e43-3a9d-3bf6-0000-000000000000</groupId>
+                <id>d264f21a-964b-313c-0000-000000000000</id>
+                <type>PROCESSOR</type>
+            </source>
+            <zIndex>0</zIndex>
+        </connections>
+        <processors>
+            <id>a3d6e89c-ea26-3666-0000-000000000000</id>
+            <parentGroupId>8b6f0e43-3a9d-3bf6-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>0.0</y>
+            </position>
+            <bundle>
+                <artifact>nifi-standard-nar</artifact>
+                <group>org.apache.nifi</group>
+                <version>1.10.0</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>File Size</key>
+                        <value>
+                            <name>File Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Batch Size</key>
+                        <value>
+                            <name>Batch Size</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Data Format</key>
+                        <value>
+                            <name>Data Format</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Unique FlowFiles</key>
+                        <value>
+                            <name>Unique FlowFiles</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>generate-ff-custom-text</key>
+                        <value>
+                            <name>generate-ff-custom-text</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>character-set</key>
+                        <value>
+                            <name>character-set</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Job Properties</key>
+                        <value>
+                            <name>Job Properties</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>File Size</key>
+                        <value>0B</value>
+                    </entry>
+                    <entry>
+                        <key>Batch Size</key>
+                        <value>1</value>
+                    </entry>
+                    <entry>
+                        <key>Data Format</key>
+                        <value>Text</value>
+                    </entry>
+                    <entry>
+                        <key>Unique FlowFiles</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>generate-ff-custom-text</key>
+                    </entry>
+                    <entry>
+                        <key>character-set</key>
+                        <value>UTF-8</value>
+                    </entry>
+                    <entry>
+                        <key>Job Properties</key>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>100000000000 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>Trigger</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>org.apache.nifi.processors.standard.GenerateFlowFile</type>
+        </processors>
+        <processors>
+            <id>d264f21a-964b-313c-0000-000000000000</id>
+            <parentGroupId>8b6f0e43-3a9d-3bf6-0000-000000000000</parentGroupId>
+            <position>
+                <x>0.0</x>
+                <y>104.0</y>
+            </position>
+            <bundle>
+                <artifact>nifi-customProcessor-nar</artifact>
+                <group>innoeye</group>
+                <version>1.10.0</version>
+            </bundle>
+            <config>
+                <bulletinLevel>WARN</bulletinLevel>
+                <comments></comments>
+                <concurrentlySchedulableTaskCount>1</concurrentlySchedulableTaskCount>
+                <descriptors>
+                    <entry>
+                        <key>Template Name</key>
+                        <value>
+                            <name>Template Name</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>kerberos-credentials-service</key>
+                        <value>
+                            <identifiesControllerService>org.apache.nifi.kerberos.KerberosCredentialsService</identifiesControllerService>
+                            <name>kerberos-credentials-service</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Spark Home</key>
+                        <value>
+                            <name>Spark Home</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Application Name</key>
+                        <value>
+                            <name>Application Name</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>JAR File to Submit to Spark</key>
+                        <value>
+                            <name>JAR File to Submit to Spark</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Class Entry Point</key>
+                        <value>
+                            <name>Class Entry Point</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Master</key>
+                        <value>
+                            <name>Master</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Driver Memory</key>
+                        <value>
+                            <name>Driver Memory</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Executor Cores</key>
+                        <value>
+                            <name>Executor Cores</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Executor memory</key>
+                        <value>
+                            <name>Executor memory</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Number of Executors</key>
+                        <value>
+                            <name>Number of Executors</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Yarn Queue</key>
+                        <value>
+                            <name>Yarn Queue</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Deploy Mode</key>
+                        <value>
+                            <name>Deploy Mode</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Extra JARs</key>
+                        <value>
+                            <name>Extra JARs</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Extra Properties Json</key>
+                        <value>
+                            <name>Extra Properties Json</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Unique Execution</key>
+                        <value>
+                            <name>Unique Execution</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Other Yarn Queue</key>
+                        <value>
+                            <name>Other Yarn Queue</name>
+                        </value>
+                    </entry>
+                    <entry>
+                        <key>Job Properties</key>
+                        <value>
+                            <name>Job Properties</name>
+                        </value>
+                    </entry>
+                </descriptors>
+                <executionNode>ALL</executionNode>
+                <lossTolerant>false</lossTolerant>
+                <penaltyDuration>30 sec</penaltyDuration>
+                <properties>
+                    <entry>
+                        <key>Template Name</key>
+                        <value>PhysicalInventoryDiscoveryFlow</value>
+                    </entry>
+                    <entry>
+                        <key>kerberos-credentials-service</key>
+                    </entry>
+                    <entry>
+                        <key>Spark Home</key>
+                        <value>/usr/hdp/current/spark2-client</value>
+                    </entry>
+                    <entry>
+                        <key>Application Name</key>
+                        <value>PhysicalInventoryDiscoveryFlow</value>
+                    </entry>
+                    <entry>
+                        <key>JAR File to Submit to Spark</key>
+                        <value>/data/zreport/process-runner/common/spark-runner-1.0.jar</value>
+                    </entry>
+                    <entry>
+                        <key>Class Entry Point</key>
+                        <value>com.inn.sparkrunner.execute.WorkflowExecuteFromXMLFile</value>
+                    </entry>
+                    <entry>
+                        <key>Master</key>
+                        <value>yarn</value>
+                    </entry>
+                    <entry>
+                        <key>Driver Memory</key>
+                        <value>1g</value>
+                    </entry>
+                    <entry>
+                        <key>Executor Cores</key>
+                        <value>1</value>
+                    </entry>
+                    <entry>
+                        <key>Executor memory</key>
+                        <value>1g</value>
+                    </entry>
+                    <entry>
+                        <key>Number of Executors</key>
+                        <value>5</value>
+                    </entry>
+                    <entry>
+                        <key>Yarn Queue</key>
+                        <value>ingest</value>
+                    </entry>
+                    <entry>
+                        <key>Deploy Mode</key>
+                        <value>cluster</value>
+                    </entry>
+                    <entry>
+                        <key>Extra JARs</key>
+                        <value>/opt/PROCESS_RUNNER/process-designer/current/lib/mariadb-java-client-2.5.0.jar</value>
+                    </entry>
+                    <entry>
+                        <key>Extra Properties Json</key>
+                    </entry>
+                    <entry>
+                        <key>Unique Execution</key>
+                        <value>false</value>
+                    </entry>
+                    <entry>
+                        <key>Other Yarn Queue</key>
+                    </entry>
+                    <entry>
+                        <key>Job Properties</key>
+                        <value></value>
+                    </entry>
+                </properties>
+                <runDurationMillis>0</runDurationMillis>
+                <schedulingPeriod>0 sec</schedulingPeriod>
+                <schedulingStrategy>TIMER_DRIVEN</schedulingStrategy>
+                <yieldDuration>1 sec</yieldDuration>
+            </config>
+            <executionNodeRestricted>false</executionNodeRestricted>
+            <name>SparkFlow</name>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>failure</name>
+            </relationships>
+            <relationships>
+                <autoTerminate>false</autoTerminate>
+                <name>success</name>
+            </relationships>
+            <state>STOPPED</state>
+            <style/>
+            <type>inn.custom.processor.SparkConnector</type>
+        </processors>
+    </snippet>
+    <timestamp>07/05/2022 16:14:21 JST</timestamp>
+</template>
